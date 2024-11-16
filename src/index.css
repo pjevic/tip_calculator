@@ -16,3 +16,69 @@ body {
   font-weight: 400;
   box-sizing: border-box;
 }
+
+main {
+  box-shadow: -1rem 2rem 4rem rgba(0, 0, 0, 0.1);
+  border: 1px solid #f7f7f7;
+  border-radius: 1rem;
+
+  width: 55rem;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.bill-input,
+.satisfaction {
+  display: grid;
+  grid-template-columns: 27rem 19rem;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.bill-input {
+}
+
+.bill-input__question {
+}
+
+.bill-input__input {
+}
+
+.satisfaction {
+}
+
+.satisfaction__question {
+}
+
+.satisfaction__option {
+}
+
+.total-bill {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.total-bill__text {
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.75rem 3rem;
+  background-color: #eee;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
