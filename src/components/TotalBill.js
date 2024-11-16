@@ -1,11 +1,13 @@
 /** @format */
 
-export default function TotalBill() {
+export default function TotalBill({ bill, tip, sum }) {
   return (
-    <div className="total-bill">
-      <p className="total-bill__text">
-        You pay ${105} (${100} + ${5} tip)
-      </p>
-    </div>
+    bill > 0 && (
+      <div className="total-bill">
+        <p className="total-bill__text">
+          You pay ${sum} (${bill} + ${tip} tip)
+        </p>
+      </div>
+    )
   );
 }
