@@ -1,4 +1,4 @@
 /** @format */
 export default function TotalBill() {
-  return <button>RESET</button>;
+  return <button>Reset</button>;
 }

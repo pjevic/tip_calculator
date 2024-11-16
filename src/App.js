@@ -7,12 +7,12 @@ import Reset from "./components/Reset";
 
 export default function App() {
   return (
-    <div className="App">
+    <main className="App">
       <BillInput />
-      <Satisfaction></Satisfaction>
-      <Satisfaction></Satisfaction>
+      <Satisfaction>How did you like the service?</Satisfaction>
+      <Satisfaction>How did your friend like the service?</Satisfaction>
       <TotalBill />
       <Reset />
-    </div>
+    </main>
   );
 }
