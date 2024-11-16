@@ -4,15 +4,19 @@ import { options } from "../data/SatisfactionData";
 
 export default function Satisfaction({
   children,
+  id,
   satisfaction,
-  setSatisfaction,
+  onSetSatisfaction,
 }) {
   return (
     <div className="satisfaction">
-      <p className="satisfaction__question">{children}</p>
+      <label for={id} className="satisfaction__question">
+        {children}
+      </label>
       <select
+        id={id}
         value={satisfaction}
-        onChange={(e) => setSatisfaction(Number(e.target.value))}
+        onChange={(e) => onSetSatisfaction(Number(e.target.value))}
         className="satisfaction__select"
       >
         {options.map((option, i) => (

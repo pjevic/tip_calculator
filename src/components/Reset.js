@@ -2,20 +2,18 @@
 export default function Reset({
   bill,
   setBill,
-  setSatisfaction1,
-  setSatisfaction2,
+  onSetSatisfaction1,
+  onSetSatisfaction2,
 }) {
   function handleReset() {
     setBill("");
-    setSatisfaction1(0);
-    setSatisfaction2(0);
+    onSetSatisfaction1(0);
+    onSetSatisfaction2(0);
   }
 
   return (
-    bill > 0 && (
-      <button onClick={handleReset} className="btn">
-        Reset
-      </button>
-    )
+    <button onClick={handleReset} className="btn">
+      Reset
+    </button>
   );
 }

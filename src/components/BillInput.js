@@ -1,12 +1,16 @@
 /** @format */
 
-export default function BillInput({ bill, setBill }) {
+export default function BillInput({ bill, onSetBill }) {
   return (
     <div className="bill-input">
-      <p className="bill-input__question">How much was the bill?</p>
+      <label for="bill-input" className="bill-input__question">
+        How much was the bill?
+      </label>
       <input
+        id="bill-input"
+        placeholder="Bill value"
         value={bill}
-        onChange={(e) => setBill(Number(e.target.value))}
+        onChange={(e) => onSetBill(Number(e.target.value))}
         type="number"
         className="bill-input__input"
       />
